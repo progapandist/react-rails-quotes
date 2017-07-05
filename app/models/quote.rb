@@ -1,0 +1,2 @@
+class Quote < ApplicationRecord
+end
