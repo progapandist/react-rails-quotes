@@ -67,9 +67,9 @@ class QuotesDisplay extends React.Component {
           <QuoteNavigation direction='next' otherQuoteId={nextQuoteId} />
             }
         </div>
-        {this.state.quote.id !== parseInt(this.props.startingQuoteId, 10) &&
-        <QuoteFooter startingQuoteId={this.props.startingQuoteId} />
-          }
+        {this.state.quote.id !== Number(this.props.startingQuoteId) &&
+          <QuoteFooter startingQuoteId={this.props.startingQuoteId} />
+        }
       </div>
     )
   }
