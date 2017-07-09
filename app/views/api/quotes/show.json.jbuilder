@@ -1,1 +1,1 @@
-json.extract! @quote, :id, :text, :author
+json.extract! @quote, :id, :text, :author, :next_id, :previous_id
